@@ -38,7 +38,7 @@ const optionsPublish = {
     'qos': 0,
     retain: false
 }
-const WebSocket_URL = 'ws:iotmaster.tech:8083/mqtt'
+const WebSocket_URL = 'wss://www.iotmaster.tech:8084/mqtt'
 const client = mqtt.connect(WebSocket_URL, options)
 
 client.on('connect', connected);
